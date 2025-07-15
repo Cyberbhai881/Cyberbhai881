@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberWebCode - Smart Learning Platform</title>
+    <meta name="description" content="Learn programming, web development, and technology skills with CyberWebCode. Expert-led courses, certifications, and hands-on projects.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="#home" class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>CyberWebCode</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#courses" class="nav-link">Courses</a></li>
+                        <li><a href="#tools" class="nav-link">Tools</a></li>
+                        <li><a href="#materials" class="nav-link">Materials</a></li>
+                        <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#admin" class="nav-link">Admin</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <a href="#login" class="btn btn-outline">Login</a>
+                        <a href="#register" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app-content">
+        <!-- Home Page Section -->
+        <section id="home" class="page-section">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Master <span class="gradient-text">Programming</span> & 
+                                <span class="gradient-text">Web Development</span>
+                            </h1>
+                            <p class="hero-description">
+                                Learn from industry experts with hands-on projects, real-world applications, 
+                                and get certified. Join 50,000+ students already learning with us.
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#courses" class="btn btn-primary btn-large">
+                                    <i class="fas fa-play"></i>
+                                    Start Learning
+                                </a>
+                                <a href="#demo" class="btn btn-outline btn-large">
+                                    <i class="fas fa-video"></i>
+                                    Watch Demo
+                                </a>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <span class="stat-number" data-count="50000">0</span>
+                                    <span class="stat-label">Students</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number" data-count="100">0</span>
+                                    <span class="stat-label">Courses</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number" data-count="25000">0</span>
+                                    <span class="stat-label">Certificates</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="hero-card">
+                                <div class="code-editor">
+                                    <div class="editor-header">
+                                        <div class="editor-dots">
+                                            <span class="dot red"></span>
+                                            <span class="dot yellow"></span>
+                                            <span class="dot green"></span>
+                                        </div>
+                                        <span class="editor-title">main.js</span>
+                                    </div>
+                                    <div class="editor-content">
+                                        <div class="code-line">
+                                            <span class="line-number">1</span>
+                                            <span class="code-text">
+                                                <span class="keyword">function</span> 
+                                                <span class="function">learnWithCyberWebCode</span>() {
+                                            </span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="line-number">2</span>
+                                            <span class="code-text">
+                                                &nbsp;&nbsp;<span class="keyword">return</span> 
+                                                <span class="string">'Success!'</span>;
+                                            </span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="line-number">3</span>
+                                            <span class="code-text">}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Why Choose CyberWebCode?</h2>
+                        <p class="section-description">
+                            We provide comprehensive learning experience with practical approach
+                        </p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="feature-title">Hands-on Learning</h3>
+                            <p class="feature-description">
+                                Learn by building real projects and applications with step-by-step guidance
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="feature-title">Expert Instructors</h3>
+                            <p class="feature-description">
+                                Learn from industry professionals with years of real-world experience
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3 class="feature-title">Verified Certificates</h3>
+                            <p class="feature-description">
+                                Earn industry-recognized certificates to boost your career prospects
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="feature-title">Free Tools</h3>
+                            <p class="feature-description">
+                                Access powerful online tools for coding, design, and productivity
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Mobile Learning</h3>
+                            <p class="feature-description">
+                                Learn anywhere, anytime with our mobile-friendly platform
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3 class="feature-title">24/7 Support</h3>
+                            <p class="feature-description">
+                                Get help whenever you need it with our dedicated support team
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Courses -->
+            <section class="courses-preview">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Popular Courses</h2>
+                        <p class="section-description">
+                            Start your learning journey with our most popular courses
+                        </p>
+                    </div>
+                    
+                    <div class="courses-grid" id="popularCourses">
+                        <!-- Courses will be loaded by JavaScript -->
+                    </div>
+                    
+                    <div class="section-footer">
+                        <a href="#courses" class="btn btn-primary">
+                            View All Courses
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="50000">0</h3>
+                                <p class="stat-label">Happy Students</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="100">0</h3>
+                                <p class="stat-label">Courses Available</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="25000">0</h3>
+                                <p class="stat-label">Certificates Issued</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-count="98">0</h3>
+                                <p class="stat-label">Success Rate %</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">What Our Students Say</h2>
+                        <p class="section-description">
+                            Real feedback from our successful students
+                        </p>
+                    </div>
+                    
+                    <div class="testimonials-slider" id="testimonialsSlider">
+                        <!-- Testimonials will be loaded by JavaScript -->
+                    </div>
+                    
+                    <div class="testimonials-nav">
+                        <button class="nav-btn prev-btn" id="prevTestimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn next-btn" id="nextTestimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Start Your Learning Journey?</h2>
+                        <p class="cta-description">
+                            Join thousands of students who have transformed their careers with CyberWebCode
+                        </p>
+                        <div class="cta-actions">
+                            <a href="#register" class="btn btn-primary btn-large">
+                                Get Started Free
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline btn-large">
+                                Contact Us
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Other pages will be loaded dynamically -->
+        <div id="dynamic-content"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <a href="#home" class="logo">
+                            <i class="fas fa-code"></i>
+                            <span>CyberWebCode</span>
+                        </a>
+                        <p class="footer-description">
+                            Empowering students with smart learning solutions and comprehensive educational resources.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#materials">Study Materials</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#fees">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 96285 05560</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>anshpandit5560@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ayodhya, Lucknow, UP</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>UPI: 9628505560@paytm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2024 CyberWebCode. All rights reserved. | Founded by ER. Ansh Pandey
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#privacy">Privacy</a>
+                        <a href="#terms">Terms</a>
+                        <a href="#sitemap">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Install Prompt -->
+    <div class="install-prompt" id="installPrompt">
+        <div class="install-content">
+            <div class="install-icon">
+                <i class="fas fa-download"></i>
+            </div>
+            <div class="install-text">
+                <h4>Install CyberWebCode</h4>
+                <p>Get the app for better experience</p>
+            </div>
+            <div class="install-actions">
+                <button class="btn btn-primary btn-small" id="installBtn">Install</button>
+                <button class="btn btn-outline btn-small" id="dismissInstall">Later</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
