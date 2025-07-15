@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberWebCode - Smart Learning Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #2563eb;
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .btn-outline {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">CyberWebCode</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div>
+                <a href="#login" class="btn btn-outline">Login</a>
+                <a href="#register" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Master Programming & Web Development</h1>
+                <p>Learn from industry experts with hands-on projects and get certified</p>
+                <div>
+                    <a href="#courses" class="btn btn-primary">Start Learning</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Why Choose CyberWebCode?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Hands-on Learning</h3>
+                        <p>Learn by building real projects and applications</p>
+                    </div>
+                    <div class="card">
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals</p>
+                    </div>
+                    <div class="card">
+                        <h3>Verified Certificates</h3>
+                        <p>Earn industry-recognized certificates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Courses</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Learn HTML, CSS, JavaScript, React, and Node.js</p>
+                        <p style="color: #2563eb; font-weight: bold;">₹4,999</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                    <div class="card">
+                        <h3>Python Programming</h3>
+                        <p>Master Python from basics to advanced</p>
+                        <p style="color: #2563eb; font-weight: bold;">₹3,999</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                    <div class="card">
+                        <h3>React.js Complete Guide</h3>
+                        <p>Build modern web applications with React</p>
+                        <p style="color: #2563eb; font-weight: bold;">₹3,499</p>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Free Tools</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Code Editor</h3>
+                        <p>Online code editor with syntax highlighting</p>
+                        <button class="btn btn-primary">Use Tool</button>
+                    </div>
+                    <div class="card">
+                        <h3>Calculator</h3>
+                        <p>Advanced calculator with scientific functions</p>
+                        <button class="btn btn-primary">Use Tool</button>
+                    </div>
+                    <div class="card">
+                        <h3>Image Compressor</h3>
+                        <p>Compress images without losing quality</p>
+                        <button class="btn btn-primary">Use Tool</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Get in Touch</h3>
+                        <p>Phone: +91 96285 05560</p>
+                        <p>Email: anshpandit5560@gmail.com</p>
+                        <p>Location: Ayodhya, Lucknow, UP</p>
+                    </div>
+                    <div class="card">
+                        <h3>Send Message</h3>
+                        <form>
+                            <input type="text" placeholder="Your Name" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <input type="email" placeholder="Your Email" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                            <textarea placeholder="Your Message" rows="4" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CyberWebCode. All rights reserved. | Founded by ER. Ansh Pandey</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted successfully!');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target.textContent === 'Enroll Now') {
+                alert('Redirecting to enrollment page...');
+            }
+            if (e.target.textContent === 'Use Tool') {
+                alert('Opening tool...');
+            }
+        });
+    </script>
+</body>
+</html>
